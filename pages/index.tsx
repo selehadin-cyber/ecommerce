@@ -7,7 +7,7 @@ interface Props{
 }
 
 const Home: React.FC<Props> = ({products, bannerData}) => {
-  console.log(bannerData)
+  console.log(products)
   return (
     <>
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
@@ -17,10 +17,10 @@ const Home: React.FC<Props> = ({products, bannerData}) => {
     </div>
 
     <div className="products-container">
-      {products?.map((product) => product.name)}
+      {products?.map((product) => <Product key={product._id} product={product} />)}
     </div>
 
-    <FooterBanner />
+    <FooterBanner footerBanner={bannerData && bannerData[0]}/>
     </>
   )
 }

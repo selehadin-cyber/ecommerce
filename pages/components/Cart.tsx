@@ -11,7 +11,7 @@ import { useStateContext } from "../../context/StateContext";
 import { urlFor } from "../../lib/client";
 
 const Cart = () => {
-  const cartRef = useRef();
+  const cartRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuantity, onRemove } =
     useStateContext() as any;
   console.log(cartItems);

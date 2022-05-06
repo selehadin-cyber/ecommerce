@@ -19,9 +19,15 @@ interface IParams extends ParsedUrlQuery {
 }
 
 const ProductDetails: React.FC<Props> = ({ product, products }) => {
-  const { qty, decQty, incQty, onAdd } = useStateContext() as any;
+  const { qty, decQty, incQty, onAdd, setShowCart } = useStateContext() as AppContextInterface;
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
+
+  const handleBuyNow = () => {
+    onAdd(product, qty)
+    setShowCart(true)
+  }
+
   return (
     <div>
       <div className="product-detail-container">
@@ -77,7 +83,7 @@ const ProductDetails: React.FC<Props> = ({ product, products }) => {
             <button className="add-to-cart" type="button" onClick={() => onAdd(product, qty)}>
               Add to Cart
             </button>
-            <button className="buy-now" type="button">
+            <button className="buy-now" type="button" onClick={handleBuyNow}>
               Buy Now
             </button>
           </div>

@@ -18,6 +18,9 @@ export interface AppContextInterface {
   setShowCart: (arg0: boolean) => void;
   toggleCartItemQuantity: (id: number, value: string) => void;
   onRemove: (product: any) => void
+  setCartItems: (arg1: any) => void
+  setTotalQuantities: (arg0: number) => void
+  setTotalPrice: (arg0: number) => void
 }
 
 interface IKeys {
@@ -25,7 +28,7 @@ interface IKeys {
   quantity?: number;
 }
 
-const Context = createContext<AppContextInterface | null>(null);
+const Context = createContext<AppContextInterface>(null as any);
 
 export const StateContext: React.FC<LayoutProps> = ({ children }) => {
   const [showCart, setShowCart] = useState(false);
@@ -130,7 +133,10 @@ export const StateContext: React.FC<LayoutProps> = ({ children }) => {
         onAdd,
         setShowCart,
         toggleCartItemQuantity,
-        onRemove
+        onRemove,
+        setCartItems,
+        setTotalQuantities,
+        setTotalPrice
       }}
     >
       {children}

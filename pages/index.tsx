@@ -7,7 +7,6 @@ interface Props{
 }
 
 const Home: React.FC<Props> = ({products, bannerData}) => {
-  console.log(products)
   return (
     <>
     <HeroBanner heroBanner={bannerData.length && bannerData[0]} />

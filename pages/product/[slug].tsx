@@ -10,8 +10,8 @@ import { useState } from "react";
 import { client, urlFor } from "../../lib/client";
 import { ParsedUrlQuery } from "querystring";
 import { GetStaticProps } from "next";
-import { Product } from "../components";
-import { Props } from "../components/Product";
+import { Product } from "../../components";
+import { Props } from "../../components/Product";
 import { AppContextInterface, useStateContext } from "../../context/StateContext";
 
 interface IParams extends ParsedUrlQuery {

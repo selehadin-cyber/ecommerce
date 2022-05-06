@@ -8,9 +8,9 @@ import {
   AiOutlineLeft,
 } from "react-icons/ai";
 import { TiDeleteOutline } from "react-icons/ti";
-import { AppContextInterface, useStateContext } from "../../context/StateContext";
-import { urlFor } from "../../lib/client";
-import getStripe from "../../lib/getStripe";
+import { AppContextInterface, useStateContext } from "../context/StateContext";
+import { urlFor } from "../lib/client";
+import getStripe from "../lib/getStripe";
 
 const Cart = () => {
   const cartRef = useRef() as React.MutableRefObject<HTMLDivElement>;

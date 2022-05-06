@@ -1,4 +1,4 @@
-import { Product, HeroBanner, FooterBanner } from "./components"
+import { Product, HeroBanner, FooterBanner } from "../components"
 import { client } from "../lib/client"
 
 interface Props{

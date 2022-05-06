@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import toast, { Toast } from "react-hot-toast";
-import { LayoutProps } from "../pages/components/Layout";
+import { LayoutProps } from "../components/Layout";
 
 export interface AppContextInterface {
   showCart: boolean;

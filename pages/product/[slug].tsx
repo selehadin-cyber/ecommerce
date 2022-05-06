@@ -43,6 +43,7 @@ const ProductDetails: React.FC<Props> = ({ product, products }) => {
             {image.map((item, i) => (
               <img
                 src={urlFor(item).url()}
+                key={i}
                 alt="carousel-image"
                 className={
                   i === index ? "small-image selected-image" : "small-image"

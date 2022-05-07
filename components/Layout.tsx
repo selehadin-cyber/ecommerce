@@ -18,8 +18,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <meta name="description" content="ihsan store is where you can find the best electronics" />
         <meta property="og:title" content="Ihsan store" />
         <meta property="og:description" content="ihsan store is where you can find the best electronics" />
-        <meta property="og:image" content={metaImage as any} />
-        <meta name="twitter:image" content={metaImage as any} />
+        <meta property="og:image" content={"./screenshot.png"} />
+        <meta name="twitter:image" content="./screenshot.png" />
       </head>
       <header>
         <Navbar />

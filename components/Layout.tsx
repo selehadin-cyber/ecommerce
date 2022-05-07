@@ -14,11 +14,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <head>
         <title>Ihsan store</title>
         <meta property="og:type" content="website" />
-        <meta name="description" content="ihsan store is where you can find the best electronics" />
-        <meta property="og:title" content="Ihsan store" />
-        <meta property="og:description" content="ihsan store is where you can find the best electronics" />
-        <meta name="image" property="og:image" content="https://github.com/selehadin-cyber/ecommerce/raw/main/components/screenshot.png" />
-        <meta name="twitter:image" content="https://github.com/selehadin-cyber/ecommerce/raw/main/components/screenshot.png" />
+        <meta name="description" property="og:description" content="ihsan store is where you can find the best electronics" />
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+
       </head>
       <header>
         <Navbar />

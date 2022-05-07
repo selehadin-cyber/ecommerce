@@ -17,7 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <meta name="description" content="ihsan store is where you can find the best electronics" />
         <meta property="og:title" content="Ihsan store" />
         <meta property="og:description" content="ihsan store is where you can find the best electronics" />
-        <meta property="og:image" content={"https://github.com/selehadin-cyber/ecommerce/raw/main/components/screenshot.png"} />
+        <meta name="image" property="og:image" content="https://github.com/selehadin-cyber/ecommerce/raw/main/components/screenshot.png" />
         <meta name="twitter:image" content="https://github.com/selehadin-cyber/ecommerce/raw/main/components/screenshot.png" />
       </head>
       <header>

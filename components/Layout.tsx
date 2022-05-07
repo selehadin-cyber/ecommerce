@@ -1,7 +1,6 @@
 import React, { ReactChild, ReactFragment, ReactPortal } from "react";
 import Head from "next/head";
 
-import metaImage from "./screenshot.png"
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -18,8 +17,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <meta name="description" content="ihsan store is where you can find the best electronics" />
         <meta property="og:title" content="Ihsan store" />
         <meta property="og:description" content="ihsan store is where you can find the best electronics" />
-        <meta property="og:image" content={"./screenshot.png"} />
-        <meta name="twitter:image" content="./screenshot.png" />
+        <meta property="og:image" content={"https://github.com/selehadin-cyber/ecommerce/blob/main/components/screenshot.png?raw=true"} />
+        <meta name="twitter:image" content="https://github.com/selehadin-cyber/ecommerce/blob/main/components/screenshot.png?raw=true" />
       </head>
       <header>
         <Navbar />

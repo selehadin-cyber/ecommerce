@@ -4,15 +4,37 @@ import { Toaster } from "react-hot-toast";
 
 import { Layout } from "../components";
 import { StateContext } from "../context/StateContext";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <StateContext>
-      <Layout>
-        <Toaster />
-        <Component {...pageProps} />
-      </Layout>
-    </StateContext>
+    <>
+    <Head>
+    <title>Ihsan store</title>
+        <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          property="og:description"
+          content="ihsan store is where you can find the best electronics"
+        />
+        <meta property="og:type" content="video.movie" />
+        <meta
+          property="og:url"
+          content="https://www.imdb.com/title/tt0117500/"
+        />
+        <meta
+          name="image"
+          property="og:image"
+          content="https://cdn.sanity.io/images/ta8yo7gl/production/a64b345016e96adfb8849af5521c8e0ecfe8f027-555x555.webp"
+        />
+    </Head>
+      <StateContext>
+        <Layout>
+          <Toaster />
+          <Component {...pageProps} />
+        </Layout>
+      </StateContext>
+    </>
   );
 }
 

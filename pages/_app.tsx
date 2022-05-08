@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta
           name="image"
           property="og:image"
-          content="https://cdn.sanity.io/images/ta8yo7gl/production/a64b345016e96adfb8849af5521c8e0ecfe8f027-555x555.webp"
+          content="https://github.com/selehadin-cyber/ecommerce/raw/main/components/screenshot.png"
         />
     </Head>
       <StateContext>
